@@ -8969,7 +8969,7 @@ html.rd-navbar-fixed-linked .page {
 }
 
 .parallax_s2{
-	background-image: url('../images/bg_def2.png'); 
+	/* background-image: url('../images/bg_def2.png');  */
 	background-repeat: no-repeat;
 	background-size: cover;	
 	background-position: center; 
