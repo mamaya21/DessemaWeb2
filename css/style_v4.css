@@ -667,7 +667,8 @@ a[href*='tel'], a[href*='mailto'] {
 		display: block;
 		width: 576px;
 		height: 538px;
-		right: -47%;
+		/* right: -47%; */
+		right: -5%;
 		top: -50%;
 		animation: movimiento 4.5s linear infinite;
 	}
@@ -8926,10 +8927,20 @@ html.rd-navbar-fixed-linked .page {
 
 .mi_slider{
 	position: relative;
-	width: 200px;
-	height: 200px;
+	width: 150px;
+	height: 150px;
 	transform-style: preserve-3d;
 	animation: rotate 30s linear infinite;
+}
+
+@media (min-width: 1200px) {
+	.mi_slider{
+		position: relative;
+		width: 250px;
+		height: 250px;
+		transform-style: preserve-3d;
+		animation: rotate 30s linear infinite;
+	}
 }
 
 @keyframes rotate {
@@ -8944,28 +8955,103 @@ html.rd-navbar-fixed-linked .page {
 
 .mi_slider span{
 	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	transform-origin: center;
-	transform-style: preserve-3d;
-	transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+		top: 10;
+		bottom: 10;
+		left: 0;
+		width: 90%;
+		height: 90%;
+		transform-origin: center;
+		transform-style: preserve-3d;
+		transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+}
+
+@media (min-width: 1200px) {
+	.mi_slider span{
+		position: absolute;
+		top: 10;
+		bottom: 10;
+		left: 0;
+		width: 90%;
+		height: 90%;
+		transform-origin: center;
+		transform-style: preserve-3d;
+		transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+	}
 }
 
 .mi_slider span img{
 	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	border-radius: 10px;
-	object-fit: cover;
+	top: 10;
+	left: 10;
+	width: 90%;
+	height: 90%;
+	border-radius: 20px;
+	object-fit: contain;
 	transition: 2s;
+}
+
+@media (min-width: 1200px) {
+	.mi_slider span img{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 15px;
+		object-fit: cover;
+		transition: 2s;
+	}
 }
 
 .mi_slider span:hover img{
 	transform: translateX(-50px) scale(1.2);
+	border-radius: 15px;
+}
+
+/* 
+background:url('images/bg_def1.png') no-repeat center center; background-size:cover; */
+
+.fondo1{
+	background-image: url('../images/BG3.png');
+	background-repeat: no-repeat;
+	background-size: cover;	
+	background-position: center; 
+	background-attachment: fixed; 
+	background-color: #000;
+	/* animation: rotation 4.5s linear infinite; */
+
+}
+
+@keyframes rotation {
+	from {
+	  transform: rotate(0deg);
+	}
+	to {
+	  transform: rotate(359deg);
+	}
+  }
+
+.fondo1:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: linear-gradient(90deg, #52c4df, #ad55c1);
+	
+	opacity: 0.7 !important;
+	z-index: -1;
+
+}
+
+@media (max-width: 1200px) {
+	.fondo1{
+		background-image: none;
+		background-repeat: no-repeat;
+		background-size: cover;	
+		background-position: center; 
+		background-attachment: fixed; 
+		background-color: #000;
+	}
 }
 
 .parallax_s2{
@@ -9011,38 +9097,3 @@ html.rd-navbar-fixed-linked .page {
 
 }
 
-/* 
-background:url('images/bg_def1.png') no-repeat center center; background-size:cover; */
-
-.fondo1{
-	background-image: url('../images/bg_prueba4.png'); 
-	background-repeat: no-repeat;
-	background-size: cover;	
-	background-position: center; 
-	background-attachment: fixed; 
-	background-color: #000;
-
-}
-
-.fondo1:before{
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: linear-gradient(90deg, #52c4df, #ad55c1);
-
-	opacity: 0.7 !important;
-	z-index: -1;
-
-}
-
-@media (max-width: 1200px) {
-	.fondo1{
-		background-image: none;
-		background-repeat: no-repeat;
-		background-size: cover;	
-		background-position: center; 
-		background-attachment: fixed; 
-		background-color: #000;
-	}
-}
