@@ -9012,7 +9012,8 @@ html.rd-navbar-fixed-linked .page {
 background:url('images/bg_def1.png') no-repeat center center; background-size:cover; */
 
 .fondo1{
-	background-image: url('../images/BG3.png');
+	/* background-image: url('../images/BG3.png'); */
+	background-image: url('../images/bg_stars.png');
 	background-repeat: no-repeat;
 	background-size: cover;	
 	background-position: center; 
@@ -9077,7 +9078,7 @@ background:url('images/bg_def1.png') no-repeat center center; background-size:co
 }
 
 .parallax_s3{
-	background-image: url('../images/bg_def2.png'); 
+	/* background-image: url('../images/bg_def2.png');  */
 	background-repeat: no-repeat;
 	background-size: cover;	
 	background-position: center; 
