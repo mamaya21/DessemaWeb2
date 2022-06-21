@@ -654,7 +654,7 @@ a[href*='tel'], a[href*='mailto'] {
 .main-decorated-box:before {
 	content: '';
 	position: absolute;
-	background: url("../images/mac_fotos.png") no-repeat center center;
+	/* background: url("../images/mac_fotos.png") no-repeat center center; */
 	background-size: contain;
 	width: 100%;
 	height: 100%;
@@ -5046,7 +5046,7 @@ html [class*='section-'].section-bottom-0 {
 
 @media (min-width: 992px) {
 	.main-section {
-		padding: 220px 0 50px 0;
+		padding: 250px 0 150px 0;
 	}
 }
 
@@ -9013,7 +9013,8 @@ background:url('images/bg_def1.png') no-repeat center center; background-size:co
 
 .fondo1{
 	/* background-image: url('../images/BG3.png'); */
-	background-image: url('../images/bg_stars.png');
+	/* background-image: url('../images/bg_stars.png'); */
+	background-image: url('../images/backs/3D_Black.png');
 	background-repeat: no-repeat;
 	background-size: cover;	
 	background-position: center; 
