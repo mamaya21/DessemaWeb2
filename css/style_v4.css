@@ -1975,8 +1975,8 @@ hr {
 .button-way-point {
 	/* width: 67px;
 	height: 67px; */
-	width: 45px;
-	height: 45px;
+	width: 52px;
+	height: 52px;
 	border: 1px solid #ffffff;
 	border-radius: 50%;
 	color: #ffffff;
@@ -9214,11 +9214,11 @@ section #slogan{
 	z-index: 1;
 }
 
-.sec_prueba2
+.sec_onebg
 {
 	content: '';
 	position: absolute;
-	background: url("../images/backs/solotierra2.png") no-repeat center center;
+	background: url("../images/backs/planet.png") no-repeat center center;
 	background-size: contain;
 	width: 88%;
 	height: 25%;
@@ -9226,17 +9226,18 @@ section #slogan{
 	display: block;	
 	animation: rotation 50.5s linear infinite;
 	z-index: 1;
+	opacity: .6;
 } 
 
 @media (min-width: 768px) {
-	.sec_prueba2
+	.sec_onebg
 	{
 		width: 87%;
 	} 
 }
 
 @media (min-width: 1200px) {
-	.sec_prueba2
+	.sec_onebg
 	{
 		
 		width: 89%;
@@ -9244,9 +9245,16 @@ section #slogan{
 }
 
 @media (max-width: 1440px) {
-	.sec_prueba2
+	.sec_onebg
 	{
 		width: 86%;
+	} 
+}
+
+@media (max-width: 1536px) {
+	.sec_onebg
+	{
+		width: 87%;
 	} 
 }
 
@@ -9289,11 +9297,11 @@ section #slogan{
 } */
 
 .btn_down {
-	position: fixed;
+	position: absolute;
 	right: 15px;
 	bottom: 15px;
 	z-index: 100;
-	width: 50px;
+	width: 100%;
 	height: 50px;
 	font-size: 15px;
 	line-height: 20px;
@@ -9308,7 +9316,7 @@ section #slogan{
 
 .btn_down:hover {
 	color: #ffffff;
-	background: #111111;
+	/* background: #111111; */
 	text-decoration: none;
 }
 
@@ -9323,7 +9331,7 @@ section #slogan{
 
 @media (min-width: 576px) {
 	.btn_down {
-		right: 40px;
+		right: 0px;
 		bottom: 40px;
 	}
 }
@@ -9373,3 +9381,12 @@ section #slogan{
 	object-fit: fill;
 	opacity: 0.8;
 }
+
+#astronauta
+{
+	position: relative;
+	max-width: 30%;
+	height: auto;
+	top: 0;
+}
+
