@@ -9220,27 +9220,33 @@ section #slogan{
 	position: absolute;
 	background: url("../images/backs/solotierra2.png") no-repeat center center;
 	background-size: contain;
-	width: 90%;
-	height: 30%;
-	top: 8%;
+	width: 88%;
+	height: 25%;
+	top: 10%;
 	display: block;	
 	animation: rotation 50.5s linear infinite;
 	z-index: 1;
 } 
 
-@media (max-width: 1200px) {
+@media (min-width: 768px) {
 	.sec_prueba2
 	{
-		content: '';
-		position: absolute;
-		background: url("../images/backs/solotierra2.png") no-repeat center center;
-		background-size: contain;
-		width: 88%;
-		height: 30%;
-		top: 8%;
-		display: block;	
-		animation: rotation 50.5s linear infinite;
-		z-index: 1;
+		width: 87%;
+	} 
+}
+
+@media (min-width: 1200px) {
+	.sec_prueba2
+	{
+		
+		width: 89%;
+	} 
+}
+
+@media (max-width: 1440px) {
+	.sec_prueba2
+	{
+		width: 86%;
 	} 
 }
 
