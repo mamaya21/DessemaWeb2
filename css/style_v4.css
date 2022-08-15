@@ -655,22 +655,35 @@ a[href*='tel'], a[href*='mailto'] {
 	content: '';
 	position: absolute;
 	/* background: url("../images/mac_fotos.png") no-repeat center center; */
+	background: url("../images/backs/solotierra2.png") no-repeat center center;
 	background-size: contain;
 	width: 100%;
 	height: 100%;
+	top: 55%;
 	display: block;	
-	animation: movimiento 4.5s linear infinite;
+	/* animation: movimiento 4.5s linear infinite; */
+	animation: rotation 50.5s linear infinite;
 }
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
 	.main-decorated-box:before {
 		display: block;
 		width: 576px;
 		height: 538px;
-		/* right: -47%; */
 		right: -5%;
 		top: -50%;
-		animation: movimiento 4.5s linear infinite;
+		animation: rotation 50.5s linear infinite;
+	}
+}  */
+
+@media (min-width: 1200px) {
+	.main-decorated-box:before {
+		display: block;
+		width: 100%;
+		height: 100%;
+		right: -35%;
+		top: 10%;
+		animation: rotation 50.5s linear infinite;
 	}
 }
 
@@ -1960,8 +1973,10 @@ hr {
 }
 
 .button-way-point {
-	width: 67px;
-	height: 67px;
+	/* width: 67px;
+	height: 67px; */
+	width: 45px;
+	height: 45px;
 	border: 1px solid #ffffff;
 	border-radius: 50%;
 	color: #ffffff;
@@ -5046,9 +5061,22 @@ html [class*='section-'].section-bottom-0 {
 
 @media (min-width: 992px) {
 	.main-section {
-		padding: 250px 0 150px 0;
+		padding: 250px 0 310px 0;
+	}
+} 
+
+@media (min-width: 1679px) {
+	.main-section {
+		padding: 250px 0 130px 0;
 	}
 }
+
+@media (min-width: 1919px) {
+	.main-section {
+		padding: 250px 0 310px 0;
+	}
+}
+
 
 .section-name {
 	font-weight: 400;
@@ -6415,7 +6443,8 @@ html.tablet .ui-to-top {
 	top: 0;
 	right: 0;
 	z-index: 1090;
-	background: #404044;
+	/* background: #404044; */
+	background: #111111;
 }
 
 .rd-navbar-static .rd-navbar--has-dropdown {
@@ -8796,8 +8825,9 @@ html.rd-navbar-fixed-linked .page {
 /* burbujas */
 
 .burbuja{
-    border-radius: 50%;
-    background: #fff;
+    /* border-radius: 50%; */
+    /* background: #fff; */
+	/* background-image: url('../images/star.png'); */
     opacity: .3;
 
     position: absolute;
@@ -9011,18 +9041,7 @@ html.rd-navbar-fixed-linked .page {
 /* 
 background:url('images/bg_def1.png') no-repeat center center; background-size:cover; */
 
-.fondo1{
-	/* background-image: url('../images/BG3.png'); */
-	/* background-image: url('../images/bg_stars.png'); */
-	background-image: url('../images/backs/3D_Black.png');
-	background-repeat: no-repeat;
-	background-size: cover;	
-	background-position: center; 
-	background-attachment: fixed; 
-	background-color: #000;
-	/* animation: rotation 4.5s linear infinite; */
 
-}
 
 @keyframes rotation {
 	from {
@@ -9033,28 +9052,7 @@ background:url('images/bg_def1.png') no-repeat center center; background-size:co
 	}
   }
 
-.fondo1:before{
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: linear-gradient(90deg, #52c4df, #ad55c1);
-	
-	opacity: 0.7 !important;
-	z-index: -1;
-
-}
-
-@media (max-width: 1200px) {
-	.fondo1{
-		background-image: none;
-		background-repeat: no-repeat;
-		background-size: cover;	
-		background-position: center; 
-		background-attachment: fixed; 
-		background-color: #000;
-	}
-}
+ 
 
 .parallax_s2{
 	/* background-image: url('../images/bg_def2.png');  */
@@ -9099,3 +9097,245 @@ background:url('images/bg_def1.png') no-repeat center center; background-size:co
 
 }
 
+/* */
+
+.fondo1{
+	/* background-image: url('../images/BG3.png'); */
+	/* background-image: url('../images/bg_stars.png'); */
+	/* background-image: url('../images/backs/3D_Black.png'); */
+	background-image: url('../images/backs/nuevo_fondo2.png');
+	background-repeat: no-repeat;
+	background-size: cover;	
+	background-position: center; 
+	background-attachment: fixed; 
+	background-color: #000;
+	/* animation: rotation 4.5s linear infinite; */
+
+}
+
+/* .fondo1:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: linear-gradient(90deg, #52c4df, #ad55c1);
+	
+	opacity: 0.7 !important;
+	z-index: -1;
+
+} */
+
+.fondo1::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    /* background: linear-gradient(to top, #1C0522, transparent); */
+	background: linear-gradient(to top, #000, transparent);
+    z-index: 1;
+}
+
+
+@media (max-width: 1200px) {
+	.fondo1{
+		background-image: none;
+		background-repeat: no-repeat;
+		background-size: cover;	
+		background-position: center; 
+		background-attachment: fixed; 
+		background-color: #000;
+	}
+}
+
+.sec_prueba
+{
+	position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    z-index: 1;
+    overflow: hidden;
+	/* background: url('../images/backs/gradient3.jpeg'); */
+	padding-top: 15px;
+}
+
+@media (min-width: 1200px) {
+	.sec_prueba
+	{
+		position: relative;
+		width: 100%;
+		min-height: 100vh;
+		display: flex;
+		justify-content: center;
+		/* align-items: center; */
+		z-index: 1;
+		overflow: hidden;
+		/* background: url('../images/backs/gradient3.jpeg'); */
+		padding-top: 150px;
+	}
+}
+
+.sec_prueba::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    /* background: linear-gradient(to top, #1C0522, transparent); */
+	background: linear-gradient(to top, #000, transparent);
+    z-index: 1;
+}
+
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section #slogan{
+    position: absolute;
+    color: #110011;
+    font-size: 7vmax;
+    text-align: center;
+    font-family: 'Rancho', sans-serif;
+    line-height: 0.8em;
+    white-space: nowrap;
+    transform: translateY(-200px);
+    margin-left: 10vw;   
+	z-index: 1;
+}
+
+.sec_prueba2
+{
+	content: '';
+	position: absolute;
+	background: url("../images/backs/solotierra2.png") no-repeat center center;
+	background-size: contain;
+	width: 100%;
+	height: 35%;
+	top: 32%;
+	display: block;	
+	animation: rotation 50.5s linear infinite;
+	z-index: 1;
+} 
+
+#text_inicial
+{
+	z-index: 1;
+}
+
+#txt_sbt2
+{
+	font-family: "Playfair Display", serif;
+	line-height: 1.5;
+	font-size: 20px;
+	position: relative;
+	padding: 8px 0px 10px 0px;
+	letter-spacing: .03em;
+}
+
+@media (min-width: 1200px) {
+	#txt_sbt2 {
+		font-size: 30px;
+		padding: 8px 10px 10px 38px;
+	}
+	#txt_sbt2:before {
+		content: '';
+		display: block;
+		width: 157px;
+		/* background-color: #ffffff; */
+		height: 3px;
+		position: absolute;
+		top: 56%;
+		left: -167px;
+		transform: translateY(-50%);
+	}
+}
+
+/* #btn_down
+{
+	
+} */
+
+.btn_down {
+	position: fixed;
+	right: 15px;
+	bottom: 15px;
+	z-index: 100;
+	width: 50px;
+	height: 50px;
+	font-size: 15px;
+	line-height: 20px;
+	color: #ffffff;
+	/* background: #FF4553; */
+	/* overflow: hidden; */
+	text-align: center;
+	text-decoration: none;
+	transition: .45s all ease-in-out;
+	/* transform: translate3d(0, 100px, 0); */
+}
+
+.btn_down:hover {
+	color: #ffffff;
+	background: #111111;
+	text-decoration: none;
+}
+
+.btn_down:focus {
+	color: #ffffff;
+}
+
+.btn_down.active {
+	transform: translate3d(0, 0, 0);
+}
+
+
+@media (min-width: 576px) {
+	.btn_down {
+		right: 40px;
+		bottom: 40px;
+	}
+}
+
+.zi1
+{
+	z-index: 1;
+}
+
+.showcase
+{
+	position: relative;
+	right: 0;
+	width: 100%;
+	height: 80vh;
+	/* height: 100%; */
+	padding: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #111;
+	color: #fff;
+	z-index: 2;
+	text-align: center;
+}
+
+.showcase video
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	/* height: 72%; */
+	object-fit: fill;
+	opacity: 0.8;
+}

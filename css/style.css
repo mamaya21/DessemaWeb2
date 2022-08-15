@@ -8921,3 +8921,47 @@ html.rd-navbar-fixed-linked .page {
 	transform: rotate(-3.8deg) scale(1);
 }
 
+.sec_prueba
+{
+	position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.sec_prueba::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to top, #1C0522, transparent);
+    z-index: 10;
+}
+
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section #slogan{
+    position: absolute;
+    color: #110011;
+    font-size: 7vmax;
+    text-align: center;
+    font-family: 'Rancho', sans-serif;
+    line-height: 0.8em;
+    white-space: nowrap;
+    transform: translateY(-200px);
+    margin-left: 10vw;   
+}
