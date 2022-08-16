@@ -9218,7 +9218,7 @@ section #slogan{
 {
 	content: '';
 	position: absolute;
-	background: url("../images/backs/planet.png") no-repeat center center;
+	/* background: url("../images/backs/tierra_2.png") no-repeat center center; */
 	background-size: contain;
 	width: 88%;
 	height: 25%;
