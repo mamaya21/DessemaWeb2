@@ -9261,6 +9261,7 @@ section #slogan{
 #text_inicial
 {
 	z-index: 1;
+	padding-top: 40px;
 }
 
 #txt_sbt2
@@ -9347,7 +9348,6 @@ section #slogan{
 	right: 0;
 	width: 100%;
 	height: 100vh;
-	/* height: 100%; */
 	padding: 100px;
 	display: flex;
 	justify-content: space-between;
@@ -9382,6 +9382,49 @@ section #slogan{
 	opacity: 0.8;
 }
 
+@media (max-width: 767px){
+	.showcase
+	{
+		height: 92vh;
+		padding: 0px;
+		padding-top: 250px;
+		display: block;
+
+	}
+
+	.showcase video
+	{
+		object-fit: cover;
+	}
+
+	#__dsw__01__h__s1
+	{
+		position: relative;
+		font-size: 23px !important;
+	}
+
+	#astronauta{
+		/* max-width: 70% !important;
+		top: -30px !important; */
+
+		max-width: 50% !important;
+		top: -327px !important;
+	}
+
+	.btn_down
+	{
+		right: 0px !important;
+		font-size: 12px !important;
+	}
+
+	.button-way-point
+	{
+		width: 42px !important;
+		height: 42px !important;
+	}
+
+}
+
 #astronauta
 {
 	position: relative;
@@ -9390,3 +9433,30 @@ section #slogan{
 	top: 0;
 }
 
+.c__dsw__01__a__s1
+{
+	margin-top: -250px;
+	border-radius: 60px;
+    border: 2px solid #ff4848;
+    background-color: #ff4848;
+
+    font-weight: 600;
+
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: normal;
+    color: #ffffff;
+	animation: btn-01--cotizar 3s infinite;
+}
+
+@keyframes btn-01--cotizar {
+	0%, 100% {
+		-webkit-box-shadow: 0px 0px 1px 0px rgb(252, 128, 128);
+		-moz-box-shadow: 0px 0px 5px 0px rgba(255, 93, 93, 0.75);
+		box-shadow: 0px 0px 10px 1px rgb(252, 128, 128);
+	}
+
+	50% {
+		-webkit-box-shadow: 0px 0px 5px 0px rgb(252, 128, 128);
+		-moz-box-shadow: 0px 0px 5px 0px rgba(255, 93, 93, 0.75);
+		box-shadow: 0px 0px 10px 5px rgb(252, 128, 128);

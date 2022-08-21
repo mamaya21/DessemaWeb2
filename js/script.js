@@ -38,7 +38,8 @@
 			parallaxJs:              $(".parallax-scene-js"),
 			maps:                    $( '.google-map-container' ),
 			customWaypoints:         $('[data-custom-scroll-to]'),
-			selectFilter:            $("select")
+			selectFilter:            $("select"),
+			lightGalleryItem: 		$("[data-lightgallery='item']"),
 		};
 
 	/**
