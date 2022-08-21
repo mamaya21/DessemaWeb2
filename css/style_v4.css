@@ -8711,6 +8711,7 @@ html.rd-navbar-fixed-linked .page {
 
 .review-carousel .owl-dots {
 	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 @media (min-width: 1200px) {
@@ -9674,8 +9675,32 @@ section #slogan{
 		width: 100%;
 		text-align: center;
 		padding-top: 168px;
+		padding-bottom: 15px;
 	}
 }
+
+@media (min-height: 844px) and (max-height: 844px)
+{
+	#img03__sc {
+		top: 611px !important;
+	}
+}
+
+@media (min-height: 851px) and (max-height: 851px)
+{
+	#img03__sc {
+		top: 612px !important;
+	}
+}
+
+@media (min-height: 915px) and (max-height: 915px) 
+{
+	#img03__sc {
+		top: 581px !important;
+	}
+}
+
+
 
 .__bg__
 {
