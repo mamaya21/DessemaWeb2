@@ -7,6 +7,7 @@
     <meta http-equiv="Last-Modified" content="0">
     <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
     <meta http-equiv="Pragma" content="no-cache">
+    <meta name="format-detection" content="telephone=no">
 
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:300,400,700%7CPoppins:300,400,500,700,900">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style_v1.0.css">
+    <link rel="stylesheet" href="css/_style_v1.css">
     <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script> -->
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
@@ -81,7 +82,7 @@
         <!-- <img src="./images/nube1.png" class="zi1"  alt="nube1" id="nube1">
         <img src="./images/fondo_transparente.png" class="zi1" alt="" id="transparente">
         <img src="./images/nube2.png" class="zi1" alt="nube2" id="nube2"> -->
-        <video src="./video/bg3.mp4" muted loop autoplay preload="auto" playsinline></video>
+        <video src="video/bg3.mp4" muted loop autoplay playsinline preload="auto"></video>
 
         <div class="text-center text-xl-left" id="text_inicial">
           <h1 id="__dsw__01__h__s1" class="text-white text-xl-center wow slideInRight" data-wow-delay=".3s">            
@@ -93,7 +94,7 @@
         <!-- <img src="./images/viento.png" alt="viento" id="viento"> -->
         <!-- <img src="./images/backs/person_nuevo.png" alt="persona" id="persona"> -->
         <!-- <img src="./images/backs/person_nuevo2.png" alt="persona" id="personas"> -->
-        <img src="./images/backs/astronauta.gif" alt="persona" id="astronauta">
+        <img src="images/backs/astronauta.gif" alt="persona" id="astronauta">
         
         <div class="btn_down" data-wow-delay=".2s">
           <a class="button-width-190 button-primary button-circle button-lg button c__dsw__01__a__s1" href="#">Cotizar ahora</a>          
@@ -139,7 +140,7 @@
                 <h3 id="__h3__about__" class="wow fadeInLeft text-capitalize text-blank-dark" data-wow-delay=".3s">¿Quiénes<span class="text-primary"> somos</span>?</h3>
                 <!-- <p class="offset-xl-40 wow fadeInUp" data-wow-delay=".4s"></p> -->
                 <p class="default-letter-spacing font-weight-bold text-blank-dark wow fadeInUp" data-wow-delay=".4s">
-                  Somos<span class="text-primary"> DESSEMA</span>, una agencia digital peruana especializados en diseño y desarrollo de soluciones tecnológicas, creando estratégias que ayuden a las empresas a crecer y despegar junto con nostros, posicionando tu negocio o idea en internet para conocimiento de todo tipo de público.
+                  Somos<span class="text-primary"> DESSEMA</span>, una agencia digital peruana especializados en diseño y desarrollo de soluciones tecnológicas, creando estratégias que ayuden a las empresas a crecer y despegar junto con nostros.
                 </p>
 
                 <p class="default-letter-spacing font-weight-bold text-blank-dark wow fadeInUp" data-wow-delay=".4s">
@@ -175,7 +176,7 @@
                     <img src="images/process/analisis.png" alt="" width="216" height="108"/>
                   </div>
                   <div class="item-description wow fadeInUp" data-wow-delay=".3s">
-                    <div class="item-subsection"><span class="item-subsection-title devider-left text-blank-dark">Análisis</span></div>
+                    <div class="item-subsection"><span class="item-subsection-title devider-left text-primary">Análisis</span></div>
                     <p class="text-blank-dark">I was impressed by the quality of what your specialists did. They quickly found out what was the main problem of my company and helped me form a correct strategy, which worked perfectly and set my business on the right path.</p>
                     
                   </div>
@@ -273,6 +274,10 @@
 
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      console.log(window.screen.width+ ' | '+ window.screen.height);
+      // alert(window.screen.width+ ' | '+ window.screen.height);
+    </script>
     <!--coded by Drel-->
   </body>
 </html>
